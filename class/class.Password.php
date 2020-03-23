@@ -48,7 +48,7 @@ class Password
         
         for ($i = 0; $i <= $this->cycles; $i++) {
             $output = [];
-            for ($j = 0; $j < $repeat; $j++) {
+            for ($j = 0; $j <= $repeat; $j++) {
                 foreach ($pattern as $element) {
                     if ($element === 0) {
                         $output[] = substr($this->characters[0][mt_rand(0, $this->max)], 0, 1);
