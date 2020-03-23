@@ -2,4 +2,4 @@
 
 This is a small application for generating a certain type of password for online accounts.
 
-![Password Generator](passwords.png)
+![Password Generator](preview.png)
