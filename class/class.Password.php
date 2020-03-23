@@ -51,9 +51,9 @@ class Password
             for ($j = 0; $j <= $repeat; $j++) {
                 foreach ($pattern as $element) {
                     if ($element === 0) {
-                        $output[] = substr($this->characters[0][mt_rand(0, $this->max)], 0, 1);
+                        $output[] = substr($this->characters[0][mt_rand(0, $this->max-1)], 0, 1);
                     } elseif ($element === 1) {
-                        $output[] = substr($this->characters[1][mt_rand(0, $this->max)], 0, 1);
+                        $output[] = substr($this->characters[1][mt_rand(0, $this->max-1)], 0, 1);
                     } else {
                         $output[] = $element;
                     }
