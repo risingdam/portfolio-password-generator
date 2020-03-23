@@ -1,5 +1,11 @@
 <?php
 
+/**
+  *
+  *  Password
+  *  
+  */
+
 class Password
 {
     
