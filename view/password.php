@@ -9,3 +9,5 @@ while ($count < count($password)) {
 }
 
 echo $template;
+
+// EOF
