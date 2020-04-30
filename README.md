@@ -1,5 +1,5 @@
 # Password Generator
 
-This is a small application for generating a certain type of password for online accounts.
+This is a small utility for generating a passwords for online accounts.
 
 ![Password Generator](docs/preview.png)
