@@ -4,8 +4,6 @@ define('APP_DIR', dirname(dirname(__dir__)).'/api/app');
 define('DATA_DIR', dirname(dirname(__dir__)).'/api/data');
 define('DEV_OPTS', JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 
-echo file_exists(APP_DIR);
-
 require APP_DIR. '/functions.php' ;
 
 $method = $_SERVER['REQUEST_METHOD'];
@@ -14,13 +12,13 @@ $body = json_decode(file_get_contents('php://input', true), true);
 
 switch($method){
     case 'GET':
-        if($endpoint==='/leon/tasks.json'){
+        if($endpoint==='/api/'){
             $data = getJsonData('default.json');
             returnResponse($data);
         }
         break;
     case 'POST':
-        if($endpoint==='/leon/tasks.json'){
+        if($endpoint==='/api/'){
             $id = addTask($body, 'default.json');
             returnResponse(['name' => $id]);
         }
