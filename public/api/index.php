@@ -5,6 +5,7 @@ define('DATA_DIR', dirname(dirname(__dir__)).'/api/data');
 define('DEV_OPTS', JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 
 require APP_DIR. '/functions.php' ;
+$method = $_SERVER['REQUEST_METHOD'];
 $endpoint = $_SERVER['REQUEST_URI'];
 $body = json_decode(file_get_contents('php://input', true), true);
 
