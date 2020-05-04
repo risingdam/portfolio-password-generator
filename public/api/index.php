@@ -8,7 +8,7 @@ require APP_DIR. '/functions.php' ;
 $endpoint = $_SERVER['REQUEST_URI'];
 $body = json_decode(file_get_contents('php://input', true), true);
 
-var_dump($endpoint);
+//var_dump($endpoint);
 
 switch($method){
     case 'GET':
