@@ -4,6 +4,8 @@ define('APP_DIR', dirname(dirname(__dir__)).'/api/app');
 define('DATA_DIR', dirname(dirname(__dir__)).'/api/data');
 define('DEV_OPTS', JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 
+echo APP_DIR
+
 require APP_DIR. '/functions.php' ;
 
 $method = $_SERVER['REQUEST_METHOD'];
