@@ -4,7 +4,7 @@ define('APP_DIR', dirname(dirname(__dir__)).'/api/app');
 define('DATA_DIR', dirname(dirname(__dir__)).'/api/data');
 define('DEV_OPTS', JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 
-echo isdir(APP_DIR);
+echo file_exists(APP_DIR);
 
 require APP_DIR. '/functions.php' ;
 
